@@ -2,10 +2,9 @@ programa {
   inclua biblioteca Util --> u
   funcao inicio() {
 
-    inteiro vetorCasa[20], vetorDado[6]
-    inteiro jogador1, jogador2, jogador, placar1 = 0, placar2 = 0 
+    inteiro jogador1, jogador2, jogador = 0, placar1 = 0, placar2 = 0 
     inteiro menu = 0, iniciar, finaljogo, verificarplacar
-    inteiro i
+    inteiro Dado1 = 0, Dado2 = 0
 
 	enquanto(menu == 0)
 	{
@@ -28,8 +27,18 @@ programa {
 	          {
 	            //Desenvolvimento Jogo
 	            escreva("\n Jogo inicializado")
-	            escreva("\n Jogador 1 começa a partida")
-	
+	            escreva("\n O dado sera jogado para ver qual jogador começa a partida:")
+
+			         enquanto(Dado1 == Dado2)
+			         {
+				         	u.aguarde(1000)
+				         
+				          Dado1 = u.sorteia(1,6)
+				          Dado2 = u.sorteia(1,6)
+				          
+				          escreva("\n Jogador 1: ", Dado1)
+				          escreva("\n Jogador 2: ", Dado2)
+					}
 	          }
 	         
 	          // Apresentar Placar jogo
@@ -54,7 +63,7 @@ programa {
           
   }
  }
-         
+              
     
 /* $$$ Portugol Studio $$$ 
  * 
