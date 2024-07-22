@@ -22,24 +22,27 @@ programa {
      
           //Inicializando Menus
           //Escolhido numero 1 do menu: INICIALIZAR JOGO
-          se(menu == 1)
+          se(menu == 1 ou menu <= 3)
           {
-            //Desenvolvimento Jogo
-            escreva("\n Jogo inicializado")
-            escreva("\n Jogador 1 começa a partida")
-
-          }
-         
-          // Apresentar Placar jogo
-          se(menu == 2)
-          {
-            escreva("\n Placar jogo é: \n Jogador 1: ", placar1, "\n Jogador 2: ", placar2)
-          }
-
-          // Finalizar Jogo
-          se(menu == 3)
-          {
-            escreva("\n Finalizar Jogo")
+          	se(menu == 1)
+	          {
+	            //Desenvolvimento Jogo
+	            escreva("\n Jogo inicializado")
+	            escreva("\n Jogador 1 começa a partida")
+	
+	          }
+	         
+	          // Apresentar Placar jogo
+	          se(menu == 2)
+	          {
+	            escreva("\n Placar jogo é: \n Jogador 1: ", placar1, "\n Jogador 2: ", placar2)
+	          }
+	
+	          // Finalizar Jogo
+	          se(menu == 3)
+	          {
+	            escreva("\n Finalizar Jogo")
+	          }
           }
           senao{
           
@@ -47,9 +50,10 @@ programa {
      	escreva("Numero incorreto, digite outro numero: " )
      	menu = 0
           }
+     }
+          
   }
  }
-}
          
     
 /* $$$ Portugol Studio $$$ 
